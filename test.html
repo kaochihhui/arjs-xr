@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+  <head>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
+<style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    
+    .full-height {
+      height: 100%;
+      background: blue;
+      opacity: 0.5;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="full-height"> 
+        <a-scene embedded arjs>
+      
+        <!-- <a-box position="0 0 -1" height="1" width="1" color="rgba(12, 0, 71, 0.1)"></a-box> -->
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+        
+        
+      <!-- <a-marker preset="hiro">
+          <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+      </a-marker> -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </div>
+  </body>
+</html>
